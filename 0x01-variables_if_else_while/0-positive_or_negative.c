@@ -1,14 +1,13 @@
 #include <stdlib.h>
 #include <time.h>
 /* more headers goes there */
-#include <stdio>
+#include <stdio.h>
 /* betty style doc for function main goes there */
 /**
- * maiin - main function
+ * main - main function
  *
- * Return: Always 0
+ * Return: Always 0 
  */
-
 int main(void)
 {
 	int n;
@@ -17,12 +16,12 @@ int main(void)
 	n = rand() - RAND_MAX / 2;
 	/* your code goes there */
 	if (n > 0)
-		printf("Sd is positive", n);
+		printf("%d is positive", n);
 	else if (n == 0)
-		printf("Sd is zero", n);
-	else
-		printf("Sd is negative", n);
-	printf ("\n");
-
+		printf("%d is zero", n);
+	else if (n < 0)
+		printf("%d is negative", n);
+	printf("\n");
 	return (0);
 }
+
